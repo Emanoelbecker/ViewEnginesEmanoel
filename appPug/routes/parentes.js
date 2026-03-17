@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET parentes page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Grama Santo Agostinho' });
+  res.render('parentes', { title: 'Parentes dos Baiacus' });
 });
 
 module.exports = router;

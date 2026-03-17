@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET fazendas page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Grama Santo Agostinho' });
+  res.render('fazendas', { title: 'Maiores Fazendas de Morangos' });
 });
 
 module.exports = router;

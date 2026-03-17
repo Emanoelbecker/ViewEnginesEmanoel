@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET culinaria page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Grama Santo Agostinho' });
+  res.render('culinaria', { title: 'Culinária do Baiacu' });
 });
 
 module.exports = router;
