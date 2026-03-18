@@ -5,11 +5,20 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <nav>
-      <a href="/">Grama</a>
-      <a href="/predadores">Predadores</a>
-      <a href="/produtos">Produtos</a>
-    </nav>
+    <div class="decoracao">
+      <div class="grama"></div>
+      <span class="inseto inseto1"></span>
+      <span class="inseto inseto2"></span>
+      <span class="inseto inseto3"></span>
+      <span class="inseto inseto4"></span>
+      <span class="inseto inseto5"></span>
+    </div>
+    <div class="page">
+      <nav>
+        <a href="/">Grama</a>
+        <a href="/predadores">Predadores</a>
+        <a href="/produtos">Produtos</a>
+      </nav>
     <div class="content-section">
       <h1><%= title %></h1>
       <p>Welcome to <%= title %></p>
@@ -21,5 +30,42 @@
         <img src="/images/grama.png" alt="grama santo agostinho" />
       </div>
     </div>
+    
+    <div class="content-section">
+      <h2>Formulário de Propriedade</h2>
+      <form action="/produtos" method="POST">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        
+        <div>
+          <label for="tamanhoTerreno">Tamanho do Terreno (m²):</label>
+          <input type="number" id="tamanhoTerreno" name="tamanhoTerreno" required />
+        </div>
+        
+        <div>
+          <label for="problemaPestes">Problemas com Pestes:</label>
+          <select id="problemaPestes" name="problemaPestes" required>
+            <option value="">Selecione uma opção</option>
+            <option value="sim">Sim</option>
+            <option value="não">Não</option>
+          </select>
+        </div>
+        
+        <div>
+          <label for="alturaMedia">Altura Média (cm):</label>
+          <input type="number" id="alturaMedia" name="alturaMedia" required />
+        </div>
+        
+        <div>
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required />
+        </div>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
   </body>
 </html>

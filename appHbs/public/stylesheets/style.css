@@ -49,6 +49,135 @@ nav a:hover {
   padding: 10px;
 }
 
+/* Estilo do Formulário Rosa Fofo */
+.formulario-morango {
+  background: linear-gradient(135deg, #FFB6D9 0%, #FFC0E0 100%);
+  border: 3px solid #FF69B4;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+  text-align: center;
+}
+
+.formulario-morango h2 {
+  color: #C71A5A;
+  font-size: 24px;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.form-fofo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+}
+
+.form-group label {
+  display: block;
+  color: #C71A5A;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #FFB6D9;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #FF69B4;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+  background-color: #fff8f5;
+}
+
+.botao-enviar {
+  background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+  margin-top: 10px;
+}
+
+.botao-enviar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 20, 147, 0.5);
+}
+
+.botao-enviar:active {
+  transform: translateY(0);
+}
+
+/* Estilo dos Dados Renderizados */
+.dados-morango {
+  background: linear-gradient(135deg, #FFB6D9 0%, #FFC0E0 100%);
+  border: 3px dashed #FF69B4;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+.dados-morango h2 {
+  color: #C71A5A;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.tabela-fofa {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linha-dado {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 12px 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(255, 105, 180, 0.2);
+}
+
+.titulo-dado {
+  color: #C71A5A;
+  font-weight: bold;
+}
+
+.valor-dado {
+  color: #555;
+  font-weight: 500;
+}
+
 img {
   max-width: 100%;
   height: auto;

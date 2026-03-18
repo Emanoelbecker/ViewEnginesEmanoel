@@ -7,3 +7,23 @@ block content
       p O baiacu é considerado uma iguaria especial em algumas culturas, mas requer especialistas qualificados no preparo devido à toxina.
       img(src='/images/sushibaiacu.jpg', alt='Culinária do Baiacu')
       p O baiacu é preparado por chefs treinados que sabem como remover as partes tóxicas, garantindo uma experiência culinária segura e deliciosa.
+    
+    if formularioPesca
+      .card-dados-pesca
+        h2.titulo-dados 🎣 Seus Dados de Pesca 🎣
+        .tabela-pesca
+          .linha-pesca
+            span.chave-pesca Maior Baiacu Pescado:
+            span.valor-pesca= formularioPesca.maiorBaiacu + ' cm'
+          .linha-pesca
+            span.chave-pesca Nome:
+            span.valor-pesca= formularioPesca.nome
+          .linha-pesca
+            span.chave-pesca Já Comeu Baiacu:
+            span.valor-pesca= formularioPesca.comeuBaiacu
+          .linha-pesca
+            span.chave-pesca Passou Mal:
+            span.valor-pesca= formularioPesca.passouMal
+          .linha-pesca
+            span.chave-pesca Local da Pesca:
+            span.valor-pesca= formularioPesca.localPesca

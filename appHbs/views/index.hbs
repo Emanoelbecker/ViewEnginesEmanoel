@@ -3,3 +3,39 @@
   <p>Bem-vindo ao site sobre {{title}}</p>
   <p>O morango (Fragaria × ananassa) é uma fruta vermelha, suculenta e doce, cultivada em todo o mundo. É rica em vitamina C e antioxidantes.</p>
 </div>
+
+<div class="formulario-morango">
+  <h2>🍓 Formulário de Morango do Amor 🍓</h2>
+  <form action="/receitas" method="POST" class="form-fofo">
+    <div class="form-group">
+      <label for="maiorMorango">Maior Morango Que Comeu:</label>
+      <input type="text" id="maiorMorango" name="maiorMorango" placeholder="Ex: tamanho ou descrição" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="colheita">Colheita (kg):</label>
+      <input type="number" id="colheita" name="colheita" placeholder="Quantidade em kg" step="0.1" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="receitaFavorita">Receita Favorita:</label>
+      <input type="text" id="receitaFavorita" name="receitaFavorita" placeholder="Ex: Torta de Morango" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="comeuMorangoAmor">Já Comeu Morango do Amor:</label>
+      <select id="comeuMorangoAmor" name="comeuMorangoAmor" required>
+        <option value="">Selecione uma opção</option>
+        <option value="sim">Sim</option>
+        <option value="não">Não</option>
+      </select>
+    </div>
+    
+    <button type="submit" class="botao-enviar">Enviar 💕</button>
+  </form>
+</div>

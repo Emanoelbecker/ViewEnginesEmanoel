@@ -1,9 +1,58 @@
 body {
+  position: relative;
   padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: green;
   color: white;
   margin: 0;
+  overflow-x: hidden;
+}
+
+.decoracao {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.grama {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: repeating-linear-gradient(-45deg, #66bb66 0, #66bb66 10px, #4ea24e 10px, #4ea24e 20px);
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inseto {
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  transform-origin: center;
+}
+
+.inseto1 { top: 15%; left: 10%; animation: vooInseto 10s linear infinite; }
+.inseto2 { top: 30%; left: 70%; animation: vooInseto 11s linear infinite reverse; }
+.inseto3 { top: 55%; left: 25%; animation: vooInseto 9s linear infinite; }
+.inseto4 { top: 40%; left: 50%; animation: vooInseto 12s linear infinite reverse; }
+.inseto5 { top: 20%; left: 40%; animation: vooInseto 8s linear infinite; }
+
+@keyframes vooInseto {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(180px, -40px) rotate(25deg); }
+  50% { transform: translate(360px, 40px) rotate(-15deg); }
+  75% { transform: translate(180px, 20px) rotate(10deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.page {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -11,6 +60,8 @@ a {
 }
 
 nav {
+  position: relative;
+  z-index: 1;
   background-color: darkgreen;
   padding: 15px;
   text-align: center;
@@ -30,6 +81,8 @@ nav a:hover {
 }
 
 .content-section {
+  position: relative;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 10px;

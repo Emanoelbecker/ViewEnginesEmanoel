@@ -12,3 +12,31 @@
 <div class="content-section">
   <a href="/receitas/morangodo-amor" class="button">Ver Morango do Amor</a>
 </div>
+
+{{#if formularioMorango}}
+<div class="dados-morango">
+  <h2>💕 Seus Dados do Morango do Amor 💕</h2>
+  <div class="tabela-fofa">
+    <div class="linha-dado">
+      <span class="titulo-dado">Maior Morango:</span>
+      <span class="valor-dado">{{formularioMorango.maiorMorango}}</span>
+    </div>
+    <div class="linha-dado">
+      <span class="titulo-dado">Nome:</span>
+      <span class="valor-dado">{{formularioMorango.nome}}</span>
+    </div>
+    <div class="linha-dado">
+      <span class="titulo-dado">Colheita:</span>
+      <span class="valor-dado">{{formularioMorango.colheita}} kg</span>
+    </div>
+    <div class="linha-dado">
+      <span class="titulo-dado">Receita Favorita:</span>
+      <span class="valor-dado">{{formularioMorango.receitaFavorita}}</span>
+    </div>
+    <div class="linha-dado">
+      <span class="titulo-dado">Já Comeu Morango do Amor:</span>
+      <span class="valor-dado">{{formularioMorango.comeuMorangoAmor}}</span>
+    </div>
+  </div>
+</div>
+{{/if}}

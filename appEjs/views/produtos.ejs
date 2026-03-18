@@ -5,11 +5,20 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <nav>
-      <a href="/">Grama</a>
-      <a href="/predadores">Predadores</a>
-      <a href="/produtos">Produtos</a>
-    </nav>
+    <div class="decoracao">
+      <div class="grama"></div>
+      <span class="inseto inseto1"></span>
+      <span class="inseto inseto2"></span>
+      <span class="inseto inseto3"></span>
+      <span class="inseto inseto4"></span>
+      <span class="inseto inseto5"></span>
+    </div>
+    <div class="page">
+      <nav>
+        <a href="/">Grama</a>
+        <a href="/predadores">Predadores</a>
+        <a href="/produtos">Produtos</a>
+      </nav>
     <div class="content-section">
       <h1><%= title %></h1>
       <p>Produtos relacionados à grama santo agostinho.</p>
@@ -21,5 +30,38 @@
         <img src="/images/fertilizante.jpg" alt="Produtos para grama santo agostinho" />
       </div>
     </div>
+    
+    <% if (typeof formulario !== 'undefined' && formulario) { %>
+    <div class="content-section">
+      <h2>Dados da Propriedade Enviados</h2>
+      <table border="1">
+        <tr>
+          <th>Campo</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Nome</td>
+          <td><%= formulario.nome %></td>
+        </tr>
+        <tr>
+          <td>Tamanho do Terreno</td>
+          <td><%= formulario.tamanhoTerreno %> m²</td>
+        </tr>
+        <tr>
+          <td>Problemas com Pestes</td>
+          <td><%= formulario.problemaPestes %></td>
+        </tr>
+        <tr>
+          <td>Altura Média</td>
+          <td><%= formulario.alturaMedia %> cm</td>
+        </tr>
+        <tr>
+          <td>Endereço</td>
+          <td><%= formulario.endereco %></td>
+        </tr>
+      </table>
+    </div>
+    <% } %>
+  </div>
   </body>
 </html>

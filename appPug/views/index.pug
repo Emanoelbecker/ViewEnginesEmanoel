@@ -10,3 +10,42 @@ block content
       h2 Características
       p Possuem corpos redondos, olhos grandes e podem inflar-se com água ou ar, dobrando de tamanho em segundos.
       img(src='/images/anatomia.jpeg', alt='Características do Baiacu')
+    
+    .formulario-praia
+      .ondas-decorativas
+        .onda.onda1
+        .onda.onda2
+        .onda.onda3
+      h2.titulo-praia 🌊 Conte sua Aventura de Pesca 🌊
+      form.form-praia(action='/culinaria', method='POST')
+        .form-group-praia
+          label.label-praia Maior Baiacu Pescado (cm):
+          input.input-praia(type='number', name='maiorBaiacu', placeholder='Tamanho em cm', required)
+        
+        .form-group-praia
+          label.label-praia Já Comeu Baiacu:
+          select.input-praia(name='comeuBaiacu', required)
+            option(value='') Selecione uma opção
+            option(value='sim') Sim
+            option(value='não') Não
+        
+        .form-group-praia
+          label.label-praia Passou Mal:
+          select.input-praia(name='passouMal', required)
+            option(value='') Selecione uma opção
+            option(value='sim') Sim
+            option(value='não') Não
+        
+        .form-group-praia
+          label.label-praia Nome:
+          input.input-praia(type='text', name='nome', placeholder='Seu nome', required)
+        
+        .form-group-praia
+          label.label-praia Local da Pesca:
+          input.input-praia(type='text', name='localPesca', placeholder='Local onde pescou', required)
+        
+        button.botao-praia(type='submit') 🌊 Enviar 🌊
+      .ondas-decorativas
+        .onda.onda1
+        .onda.onda2
+        .onda.onda3
